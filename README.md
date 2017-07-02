@@ -1,1 +1,1 @@
-# ChungYo_freshman_2017
+# Chung-Yo freshman 2017
