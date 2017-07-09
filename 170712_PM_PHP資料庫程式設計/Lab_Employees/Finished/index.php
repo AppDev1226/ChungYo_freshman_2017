@@ -1,17 +1,16 @@
 <?php
 require ("config.php");
 
-$link = mysql_connect ( $dbhost, $dbuser, $dbpass ) or die ( mysql_error () );
-$result = mysql_query ( "set names utf8", $link );
-mysql_selectdb ( $dbname, $link );
+$link = mysqli_connect ( $dbhost, $dbuser, $dbpass ) or die ( mysqli_connect_error() );
+$result = mysqli_query ( $link, "set names utf8" );
+mysqli_select_db ( $link, $dbname );
 $commandText = <<<SqlQuery
 select id, firstName, lastName, title, picture,
   (select count(*) from employee where managerId = e.id) as reportCount
   from employee e
 SqlQuery;
 
-$result = mysql_query ( $commandText, $link );
-// echo mysql_num_rows($result);
+$result = mysqli_query ( $link, $commandText );
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,7 +32,7 @@ $result = mysql_query ( $commandText, $link );
 
 <div data-role="content">
 	<ul data-role="listview" data-filter="true">
-	<?php while ($row = mysql_fetch_assoc($result)) : ?>
+	<?php while ($row = mysqli_fetch_assoc($result)) : ?>
 		<li>
 		<a href="employeeDetails.php?id=<?php echo $row["id"] ?>"> 
 			<img src="images/<?php echo $row["picture"]?>">
@@ -47,8 +46,7 @@ $result = mysql_query ( $commandText, $link );
 
 </div>
 <?php
-mysql_free_result ( $result );
-mysql_close ( $link );
+mysqli_close ( $link );
 ?>
 </body>
 </html>

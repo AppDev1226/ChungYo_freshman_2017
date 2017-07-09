@@ -1,12 +1,12 @@
-¥»½Ò°ó½m²ß§ï½s¦Û Christophe Coenraets ¥ı¥Íªº jQuery Mobile ¥Ü½d½d¨Ò¡]_original¸ê®Æ§¨¡^¡A
-ºô§}: http://coenraets.org/blog/2011/11/jquery-mobile-getting-started-application/
+æœ¬èª²å ‚ç·´ç¿’æ”¹ç·¨è‡ª Christophe Coenraets å…ˆç”Ÿçš„ jQuery Mobile ç¤ºç¯„ç¯„ä¾‹ï¼ˆ_originalè³‡æ–™å¤¾ï¼‰ï¼Œ
+ç¶²å€: http://coenraets.org/blog/2011/11/jquery-mobile-getting-started-application/
 
 
 * --------------------------------------------------------------------------------
 *
-*  1. ¶i¦æ½m²ß«e¡A½Ğ¥ı§Q¥Î phpMyAdmin °õ¦æ¤U¦C SQL ±Ô­z¡A«Ø¥ß¥»¦¸½m²ß©Ò»İªº¸ê®Æ®w¡C
+*  1. é€²è¡Œç·´ç¿’å‰ï¼Œè«‹å…ˆåˆ©ç”¨ phpMyAdmin åŸ·è¡Œä¸‹åˆ— SQL æ•˜è¿°ï¼Œå»ºç«‹æœ¬æ¬¡ç·´ç¿’æ‰€éœ€çš„è³‡æ–™åº«ã€‚
 *
-*  2. ¶}±Ò config.php¡A³]©w¦U¶µ°Ñ¼Æ¡A¨Ò¦p root ªº±K½X¡C
+*  2. é–‹å•Ÿ config.phpï¼Œè¨­å®šå„é …åƒæ•¸ï¼Œä¾‹å¦‚ root çš„å¯†ç¢¼ã€‚
 *
 * --------------------------------------------------------------------------------
 
