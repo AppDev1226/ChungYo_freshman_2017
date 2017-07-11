@@ -10,20 +10,19 @@ if (! is_numeric ( $id ))
 	die ( "id not a number." );
 
 require ("config.php");
-$link = mysql_connect ( $dbhost, $dbuser, $dbpass ) or die ( mysql_error () );
-$result = mysql_query ( "set names utf8", $link );
-mysql_selectdb ( $dbname, $link );
+$link = mysqli_connect ( $dbhost, $dbuser, $dbpass ) or die ( mysql_error () );
+$result = mysqli_query ( $link, "set names utf8" );
+mysqli_select_db ( $link, $dbname );
 $commandText = <<<SqlQuery
 select ProductID, ProductName, UnitsInStock  
   from products
   where ProductID = $id
 SqlQuery;
 
-$result = mysql_query ( $commandText, $link );
-$row = mysql_fetch_assoc ( $result );
+$result = mysqli_query ( $link, $commandText );
+$row = mysqli_fetch_assoc ( $result );
 
 echo json_encode($row);
 
-mysql_free_result ( $result );
-mysql_close ( $link );
+mysqli_close ( $link );
 ?>

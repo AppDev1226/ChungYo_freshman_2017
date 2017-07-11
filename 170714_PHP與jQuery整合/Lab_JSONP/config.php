@@ -2,7 +2,7 @@
 	
 	$dbhost = 'localhost';
 	$dbuser = 'root';
-	$dbpass = 'password';
+	$dbpass = '';
 	$dbname = 'northwind';
 
 ?>
