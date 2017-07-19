@@ -1,4 +1,4 @@
-﻿# Lab: 於 Cloud9 IDE 進行 PHP 程式的單元測試
+# Lab: 於 Cloud9 IDE 進行 PHP 程式的單元測試
 
 
 
@@ -10,8 +10,7 @@
     新資料夾名稱: Lab_UnitTest
 
 
-1.1 啟動 Cloud9 IDE
-    滑鼠右鍵點按 Lab_UnitTest | 選擇 Open Terminal Here
+1.1 滑鼠右鍵點按 Lab_UnitTest | 選擇 Open Terminal Here
 
 
 1.2 在終端機視窗依序輸入下列指令，建立本練習所需的目錄結構:
@@ -144,7 +143,7 @@ vendor/bin/phpunit ./myProject/Test/SetupTest.php
     <Note> 你認為哪一種方式比較好? 參數或者是設定檔?
 
 
-2.7 編輯 myProject/Test/SetupTest.txt, 將
+2.7 編輯 myProject/Test/SetupTest.php, 將
     testAssertTrue() 改成 tryAssertTrue
 
 
